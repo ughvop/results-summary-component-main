@@ -15,7 +15,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/results-summary-component-vanilla-css-plus-bad-flex-PclZNWZHUw)
 - Live Site URL: [here](https://ughvop.github.io/results-summary-component-main/)
 
 ## My process
