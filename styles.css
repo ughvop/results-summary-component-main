@@ -1,149 +1,174 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
-    background-color: white;
+  background-color: white;
 }
 
 .result {
-    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 0 0 20px 20px;
-    padding: 1rem 3rem;
-    text-align: center;
-    font-family: 'Hanken Grotesk', sans-serif;
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 0 0 20px 20px;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
-.result > h1, .result > p, .hundred {
-    opacity: 0.7;
+.result > h1,
+.result > p,
+.hundred {
+  opacity: 0.7;
 }
 
 .result > h1 {
-    color: white;
-    font-size: 14px;
-    
+  color: white;
+  font-size: 14px;
 }
 
 .result > p {
-    font-size: 14px;
-    padding-bottom: 0.5rem;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
 }
 
-.result > h2, .result > p {
-    color: white;
-    padding-top: 0.5rem;
+.result > h2,
+.result > p {
+  color: white;
+  padding-top: 0.5rem;
 }
 
 .circle {
-    color: white;
-    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    border-radius: 100px;
-    width: 7rem;
-    height: 7rem;
-    margin: 1rem auto 0.2rem;
-    padding: 1rem;
+  color: white;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 100px;
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem auto 0.2rem;
+  padding: 1rem;
 }
 
 .total-score {
-    font-size: 2.3rem;
-    font-weight: 800;
+  font-size: 2.3rem;
+  font-weight: 800;
 }
 
 .summary {
-    margin: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 14px;
-    color: hsl(224, 30%, 27%);
+  margin: 1.5rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 14px;
+  color: hsl(224, 30%, 27%);
 }
 
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 7px;
-    padding: 0.7rem;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  padding: 0.7rem;
+  margin-top: 1rem;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left > h3 {
+  padding-left: 0.4rem;
 }
 
 .detailed-score {
-    color: hsl(224, 30%, 27%);
+  color: hsl(224, 30%, 27%);
+  padding-right: 0.4rem;
+  padding-left: 3rem;
 }
 
 .reaction {
-    background-color: hsl(0, 100%, 67%, .1);
+  background-color: hsl(0, 100%, 67%, 0.1);
 }
 
-.reaction > h3 {
-    color: hsl(0, 100%, 67%);
+.reaction-title {
+  color: hsl(0, 100%, 67%);
 }
 
 .memory {
-    background-color: hsl(39, 100%, 56%, .1);
+  background-color: hsl(39, 100%, 56%, 0.1);
 }
 
-.memory > h3 {
-    color: hsl(39, 100%, 56%);;
+.memory-title {
+  color: hsl(39, 100%, 56%);
 }
 
 .verbal {
-    background-color: hsl(166, 100%, 37%, .1);
+  background-color: hsl(166, 100%, 37%, 0.1);
 }
 
-.verbal > h3 {
-    color: hsl(166, 100%, 37%);
+.verbal-title {
+  color: hsl(166, 100%, 37%);
 }
 
 .visual {
-    background-color: hsl(234, 85%, 45%, .1);
+  background-color: hsl(234, 85%, 45%, 0.1);
 }
 
-.visual > h3 {
-    color: hsl(234, 85%, 45%);
-}
-
-.button {
-    text-align: center;
+.visual-title {
+  color: hsl(234, 85%, 45%);
 }
 
 button {
-    all:unset;
-    color: white;
-    font-family: 'Hanken Grotesk', sans-serif;
-    background-color: hsl(224, 30%, 27%);
-    border-radius: 20px;
-    padding: 0.6rem 5.3rem;
-    margin-top: 1.2rem;
-    cursor: pointer;
+  all: unset;
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  padding: 0.6rem 0rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
 }
 
 button:hover {
-    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin: 1rem;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 600px) {
-    #container {
-        display: flex;
-        max-width: 550px;
-        margin-top: 22vh;
-        margin-inline: auto;
-        box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.4);
-        border-radius: 20px;
-    }
+  #container {
+    display: flex;
+    margin-top: 20vh;
+    margin-inline: auto;
+    max-width: 550px;
+    box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+  }
 
-    .result {
-        border-radius: 20px;
-    }
-    
+  .result {
+    border-radius: 20px;
+    max-width: 50%;
+    padding-top: 3.5rem;
+  }
 }
